@@ -1,0 +1,44 @@
+﻿<Window x:Class="ProjetoFinalBD.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjetoFinalBD"
+        mc:Ignorable="d"
+        Title="Window1" Height="500" Width="700">
+    <Grid Background="#FFE5E5E5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*">
+            </ColumnDefinition>
+            <ColumnDefinition Width="100">
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Expander Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Header="OLA" Height="100" Margin="0,0,0,-64" VerticalAlignment="Top" Width="100">
+            <Grid Background="#FFE5E5E5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Content="Account"></Button>
+                <Button Grid.Row="1" Content="Definitions"></Button>
+                <Button Grid.Row="2" Content="Logout"></Button>
+            </Grid>
+        </Expander>
+        <Image Grid.Row="1" HorizontalAlignment="Left" Width="150" Height="150">
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="300" UriSource="1.png"/>
+            </Image.Source>
+        </Image>
+        <Image Grid.Row="1" HorizontalAlignment="Center" Width="150" Height="150">
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="300" UriSource="1.png" />
+            </Image.Source>
+        </Image>
+    </Grid>
+</Window>
