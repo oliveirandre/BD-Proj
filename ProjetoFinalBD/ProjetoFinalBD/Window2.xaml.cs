@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Diagnostics;
+using System.Windows.Navigation;
 
 namespace ProjetoFinalBD
 {
@@ -19,9 +21,25 @@ namespace ProjetoFinalBD
     /// </summary>
     public partial class Window2 : Window
     {
+        private static int i = 0;
+        private static int j = 1;
+        private static int k = 2;
+        private static string[] albums = new string[]
+        {
+            @"1.png",
+            @"2.jpg",
+            @"3.jpg",
+            @"4.jpg",
+            @"5.jpg"
+        };
+
         public Window2()
         {
             InitializeComponent();
+
+            Main.Source = new BitmapImage(new Uri(albums[j], UriKind.Relative));
+            Right.Source = new BitmapImage(new Uri(albums[k], UriKind.Relative));
+            Left.Source = new BitmapImage(new Uri(albums[i], UriKind.Relative));
         }
 
         private void ButtonPopUpLogout_Click(object sender, RoutedEventArgs e)
@@ -42,5 +60,31 @@ namespace ProjetoFinalBD
             ButtonOpenMenu.Visibility = Visibility.Collapsed;
             ButtonCloseMenu.Visibility = Visibility.Visible;
         }
+
+        private void ButtonSlideRight_Click(object sender, RoutedEventArgs e)
+        {
+            i--; j--; k--;
+            if (i < 0) i = albums.Length - 1; if (j < 0) j = albums.Length - 1; if (k < 0) k = albums.Length - 1;
+            Main.Source = new BitmapImage(new Uri(albums[j], UriKind.Relative));
+            Right.Source = new BitmapImage(new Uri(albums[k], UriKind.Relative));
+            Left.Source = new BitmapImage(new Uri(albums[i], UriKind.Relative));
+        }
+
+        private void ButtonSlideLeft_Click(object sender, RoutedEventArgs e)
+        {
+            i--; j--; k--;
+            if (i < 0) i = albums.Length - 1; if (j < 0) j = albums.Length - 1; if (k < 0) k = albums.Length - 1;
+            Main.Source = new BitmapImage(new Uri(albums[j], UriKind.Relative));
+            Left.Source = new BitmapImage(new Uri(albums[k], UriKind.Relative));
+            Right.Source = new BitmapImage(new Uri(albums[i], UriKind.Relative));
+        }
+
+        private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
+            e.Handled = true;
+        }
+
+        
     }
 }
