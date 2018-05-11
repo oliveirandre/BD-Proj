@@ -32,3 +32,14 @@ C:\Users\Andre\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\ProjetoFi
 C:\Users\Andre\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\ProjetoFinalBD.csproj.CoreCompileInputs.cache
 C:\Users\Andre\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\ProjetoFinalBD.exe
 C:\Users\Andre\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\ProjetoFinalBD.pdb
+C:\Users\Andre\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\bin\Debug\MaterialDesignColors.dll
+C:\Users\Andre\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Andre\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Andre\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Andre\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\Window2.g.cs
+C:\Users\Andre\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\App.baml
+C:\Users\Andre\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\Window2.baml
+C:\Users\Andre\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\Window3.g.cs
+C:\Users\Andre\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\Window3.baml
+C:\Users\Andre\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\Window4.g.cs
+C:\Users\Andre\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\Window4.baml
