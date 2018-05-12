@@ -85,6 +85,9 @@ namespace ProjetoFinalBD
             e.Handled = true;
         }
 
-        
+        private void GitHubItemSelected(object sender, RoutedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("https://github.com/oliveirandre/BD-Proj"));
+        }
     }
 }
