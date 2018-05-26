@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Andre\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\
+C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\
 ProjetoFinalBD
 none
 false
 DEBUG;TRACE
-C:\Users\Andre\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\App.xaml
-5922583747
+C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\App.xaml
+5203296784
 
-13-1863364451
-15-1584447284
-MainWindow.xaml;Window1.xaml;Window2.xaml;Window3.xaml;Window4.xaml;
+14-603264979
+15-2105185862
+MainWindow.xaml;Window1.xaml;Window2.xaml;LoginWindow.xaml;SignupWindow.xaml;
 
-False
+True
 

@@ -13,6 +13,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Diagnostics;
 using System.Windows.Navigation;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Data.SqlClient;
 
 namespace ProjetoFinalBD
 {
@@ -21,6 +27,9 @@ namespace ProjetoFinalBD
     /// </summary>
     public partial class Window2 : Window
     {
+
+        private SqlConnection cn;
+
         private static int i = 0;
         private static int j = 1;
         private static int k = 2;
@@ -44,7 +53,7 @@ namespace ProjetoFinalBD
 
         private void ButtonPopUpLogout_Click(object sender, RoutedEventArgs e)
         {
-            Window3 win3 = new Window3();
+            LoginWindow win3 = new LoginWindow();
             win3.Show();
             this.Close();
         }
@@ -88,6 +97,44 @@ namespace ProjetoFinalBD
         private void GitHubItemSelected(object sender, RoutedEventArgs e)
         {
             Process.Start(new ProcessStartInfo("https://github.com/oliveirandre/BD-Proj"));
+        }
+
+        private SqlConnection getSGBDConnection()
+        {
+            return new SqlConnection("data source= .\\SQLEXPRESS;integrated security=true;initial catalog=ProjetoFinalBD");
+        }
+
+        private bool verifySGBDConnection()
+        {
+            if (cn == null)
+                cn = getSGBDConnection();
+
+            if (cn.State != ConnectionState.Open)
+                cn.Open();
+
+            return cn.State == ConnectionState.Open;
+        }
+
+        private void TestingAdd(object sender, RoutedEventArgs e)
+        {
+            /*if (!verifySGBDConnection())
+                return;
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "INSERT SampleKeeper.Account (real_name, nickname, password) " + "VALUES ('testname', 'testnickname', 'testpassword') ";
+
+            cmd.Connection = cn;
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Failed to update contact in database. \n ERROR MESSAGE: \n" + ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }*/
         }
     }
 }

@@ -54,8 +54,6 @@ C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\ProjetoFi
 C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\MainWindow.g.cs
 C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\Window1.g.cs
 C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\Window2.g.cs
-C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\Window3.g.cs
-C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\Window4.g.cs
 C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\App.g.cs
 C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\ProjetoFinalBD_MarkupCompile.cache
 C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\ProjetoFinalBD_MarkupCompile.lref
@@ -63,11 +61,13 @@ C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\App.baml
 C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\MainWindow.baml
 C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\Window1.baml
 C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\Window2.baml
-C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\Window3.baml
-C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\Window4.baml
 C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\ProjetoFinalBD.g.resources
 C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\ProjetoFinalBD.Properties.Resources.resources
 C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\ProjetoFinalBD.csproj.GenerateResource.Cache
 C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\ProjetoFinalBD.csproj.CoreCompileInputs.cache
 C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\ProjetoFinalBD.exe
 C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\ProjetoFinalBD.pdb
+C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\LoginWindow.g.cs
+C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\SignupWindow.g.cs
+C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\LoginWindow.baml
+C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\obj\Debug\SignupWindow.baml
