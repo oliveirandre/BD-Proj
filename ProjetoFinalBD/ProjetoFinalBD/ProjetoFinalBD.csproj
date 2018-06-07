@@ -61,11 +61,29 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Class1.cs" />
+    <Compile Include="Music2Playlist.xaml.cs">
+      <DependentUpon>Music2Playlist.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewAlbum.xaml.cs">
+      <DependentUpon>NewAlbum.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewPlaylist.xaml.cs">
+      <DependentUpon>NewPlaylist.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewSample.xaml.cs">
+      <DependentUpon>NewSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewSong.xaml.cs">
+      <DependentUpon>NewSong.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlaylistWindow.xaml.cs">
+      <DependentUpon>PlaylistWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Window2.xaml.cs">
-      <DependentUpon>Window2.xaml</DependentUpon>
+    <Compile Include="SearchWindow.xaml.cs">
+      <DependentUpon>SearchWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
@@ -73,7 +91,7 @@
     <Compile Include="SignupWindow.xaml.cs">
       <DependentUpon>SignupWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="MainWindow.xaml">
+    <Page Include="HomeWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -81,15 +99,39 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="HomeWindow.xaml.cs">
+      <DependentUpon>HomeWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Music2Playlist.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewAlbum.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewPlaylist.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewSong.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PlaylistWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Window2.xaml">
+    <Page Include="SearchWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -133,14 +175,17 @@
     <Resource Include="home.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Covers\" />
+    <Resource Include="Covers\album_null.png" />
+    <Resource Include="Covers\drake.png" />
+    <Resource Include="Covers\eminem.png" />
+    <Resource Include="Covers\imagine.png" />
+    <Resource Include="Covers\kendrick.png" />
+    <Resource Include="Covers\martingarrix.png" />
+    <Resource Include="Covers\sinatra.png" />
+    <Resource Include="Covers\thriller.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="1.png" />
-    <Resource Include="2.jpg" />
-    <Resource Include="3.jpg" />
-    <Resource Include="4.jpg" />
-    <Resource Include="5.jpg" />
+    <Resource Include="Covers\note.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

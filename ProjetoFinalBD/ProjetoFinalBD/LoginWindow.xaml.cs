@@ -16,8 +16,6 @@ using System.Windows.Navigation;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Data.SqlClient;
 
 namespace ProjetoFinalBD
@@ -37,43 +35,34 @@ namespace ProjetoFinalBD
 
         private void ButtonLogin_Click(object sender, RoutedEventArgs e)
         {
-            if (!verifySGBDConnection())
+            int userID = 0;
+            if(!verifySGBDConnection())
+            {
                 return;
-            SqlCommand cmd = new SqlCommand();
-            String query = "SELECT COUNT(1) FROM SampleKeeper.Account WHERE nickname=@nickname AND password=@password";
-            SqlCommand sqlCmd = new SqlCommand(query, cn);
-            cmd.Parameters.AddWithValue("@nickname", txtUsername.Text);
-            cmd.Parameters.AddWithValue("@password", txtPassword.Password);
-            cmd.Connection = cn;
-            int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
-            if (txtUsername.Text == "" || txtPassword.Password == "")
-            {
-                label1.Content = "You must fill in all the fields!";
-                label1.Visibility = Visibility.Visible;
             }
-            else if (count != 1)
+            SqlDataAdapter da2 = new SqlDataAdapter();            
+            if (cn.State == ConnectionState.Closed)
             {
-                label1.Content = "Username or Password is incorrect!";
-                label1.Visibility = Visibility.Visible;
+                cn.Open();
             }
-            else
+            SqlCommand command = new SqlCommand("SELECT SampleKeeper.getLogin(@nickname, @password)", cn);
+            command.Parameters.AddWithValue("@nickname", txtUsername.Text);
+            command.Parameters.AddWithValue("@password", txtPassword.Password);            
+            userID = (int)command.ExecuteScalar();
+            
+            if(userID != 0)
             {
-                try
-                {
-                    cmd.ExecuteNonQuery();
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception("Failed to update contact in database. \n ERROR MESSAGE: \n" + ex.Message);
-                }
-                finally
-                {
-                    cn.Close();
-                }
-                Window2 win2 = new Window2();
+                cn.Close();
+                SearchWindow win2 = new SearchWindow(txtUsername.Text, userID);
                 win2.Show();
                 this.Close();
-            }            
+            }
+                       
+            else
+            {
+                label1.Content = "Wrong Username and/or Password!";
+                label1.Visibility = Visibility.Visible;
+            }          
         }
 
         private void Hyperlink_Click(object sender, RoutedEventArgs e)

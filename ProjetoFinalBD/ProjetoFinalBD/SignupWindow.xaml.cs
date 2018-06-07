@@ -16,8 +16,6 @@ using System.Windows.Navigation;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Data.SqlClient;
 
 namespace ProjetoFinalBD
@@ -39,19 +37,25 @@ namespace ProjetoFinalBD
         {
             if (!verifySGBDConnection())
                 return;
-            SqlCommand cmd = new SqlCommand();
+            SqlCommand cmd = new SqlCommand("SampleKeeper.add_account",cn);
 
-            cmd.CommandText = "INSERT SampleKeeper.Account (email, nickname, password) " + "VALUES (@email,@nickname,@password) ";
-            cmd.Parameters.Clear();
+            cmd.CommandType = CommandType.StoredProcedure;
+
             cmd.Parameters.AddWithValue("@email", txtEmail.Text);
-            cmd.Parameters.AddWithValue("@nickname", txtUsername.Text);
+            cmd.Parameters.AddWithValue("@username", txtUsername.Text);
             cmd.Parameters.AddWithValue("@password", txtPassword.Password);
+
             cmd.Connection = cn;
 
             if (txtEmail.Text == "" || txtUsername.Text == "" || txtPassword.Password == "" || txtPassword2.Password == "") {
                 label1.Content = "You must fill in all the fields!";
                 label1.Visibility = Visibility.Visible;
             }
+
+            /*else if (returnvalue.equals1)
+            {
+                label1.Content = "There is already an account with that username!";
+            }*/
 
             else if (txtPassword.Password != txtPassword2.Password)
             {
@@ -94,7 +98,5 @@ namespace ProjetoFinalBD
 
             return cn.State == ConnectionState.Open;
         }
-
-
     }
 }

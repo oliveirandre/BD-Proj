@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\olive\Desktop\BD-Proj\ProjetoFinalBD\ProjetoFinalBD\App.xaml
-5203296784
+11707021236
 
-14-603264979
+202082394948
 15-2105185862
-MainWindow.xaml;Window1.xaml;Window2.xaml;LoginWindow.xaml;SignupWindow.xaml;
+HomeWindow.xaml;Music2Playlist.xaml;NewAlbum.xaml;NewPlaylist.xaml;NewSample.xaml;NewSong.xaml;PlaylistWindow.xaml;Window1.xaml;SearchWindow.xaml;LoginWindow.xaml;SignupWindow.xaml;
 
 True
 
